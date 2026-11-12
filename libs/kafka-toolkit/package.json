@@ -1,0 +1,19 @@
+{
+  "name": "@poc/kafka-toolkit",
+  "version": "1.0.0",
+  "private": true,
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "scripts": {
+    "build": "tsc -p tsconfig.json",
+    "clean": "node -e \"require('fs').rmSync('dist',{recursive:true,force:true})\""
+  },
+  "dependencies": {
+    "@poc/contracts": "1.0.0",
+    "kafkajs": "^2.2.4",
+    "mongodb": "^6.12.0"
+  },
+  "devDependencies": {
+    "typescript": "^5.7.2"
+  }
+}
